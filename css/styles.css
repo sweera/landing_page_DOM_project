@@ -17,7 +17,23 @@ h1 {
   font-size: 3em;
   margin: 2em 1rem;
 }
-
+.page__header {
+  background-color: black !important;
+}
+.navbar__menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+}
+.navbar__menu {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  line-height: 3em;
+}
+#navbar__list li {
+  margin-left: 10px;
+}
 @media only screen and (min-width: 35em) {
   h1 {
     font-size: 7em;
@@ -55,6 +71,7 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+
 .navbar__menu ul {
   padding-left: 0;
   margin: 0;
@@ -81,7 +98,6 @@ section {
 
 /* Header Styles */
 .page__header {
-  background: #fff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -105,7 +121,21 @@ section {
   padding: 1em;
   text-align: left;
 }
-
+@media only screen and (max-width: 34em) {
+  .navbar__menu {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .navbar__menu ul li {
+    width: 100%;
+    margin: 0px !important;
+    text-align: center !important;
+  }
+  .navbar__menu ul {
+  }
+}
 @media only screen and (min-width: 35em) {
   .landing__container {
     max-width: 50em;
