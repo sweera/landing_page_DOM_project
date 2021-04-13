@@ -1,8 +1,13 @@
+//Manipulating the DOM Assignment
+//Landing Page
+
 //To scroll to the section corresponding to the item clicked in the menubar
 
 document.addEventListener("DOMContentLoaded", () => {
   const menu_items = document.querySelectorAll("[id^='item']");
+  //Using regex to look for the id starting with item i.e. elements in navbar
   menu_items.forEach(function (menu_item) {
+    //looping over the node list obtained in menu_items to listen for a click on any of them
     menu_item.addEventListener("click", () => {
       menu_items.forEach((menu_item) => {
         if (menu_item.classList.contains("selected")) {
@@ -10,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      menu_item.classList.add("selected");
-      let el = menu_item.id.split("item");
+      menu_item.classList.add("selected"); //adding the selected class in the classlist of menu_item if it is not already
+      let el = menu_item.id.split("item"); //adding the section the user wants to scroll to and use scroll function to take them there
       el = "#section" + el[1];
       window.scroll({
         behavior: "smooth",
@@ -35,7 +40,7 @@ function highlightNavItem() {
 }
 
 highlightNavItem();
-window.addEventListener("scroll", highlightNavItem);
+window.addEventListener("scroll", highlightNavItem); //check for the scroll event and execute the function by adding selected class to classlist
 
 //To make the menubar disappear once a section is being viewed
 //Menubar disappears when user scrolls down and appears when the user scrolls up
@@ -44,16 +49,15 @@ var prev_position = window.pageYOffset;
 window.onscroll = function () {
   var current_position = window.pageYOffset;
   if (prev_position > current_position) {
-    //document.getElementsByClassName('navbar__menu').style.top = "0";
     document.getElementById("navbar").style.top = "0";
   } else {
-    //document.getElementsByClassName('navbar__menu').style.top = "-50px";
     document.getElementById("navbar").style.top = "-50px";
   }
   prev_position = current_position;
 };
 
 //Smooth scroll to top
+
 const topScroll = document.getElementById("#top");
 topScroll.scrollTo({
   top: 0,
