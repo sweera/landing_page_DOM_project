@@ -34,6 +34,9 @@ h1 {
 #navbar__list li {
   margin-left: 10px;
 }
+.selected {
+  background-color: royalblue;
+}
 @media only screen and (min-width: 35em) {
   h1 {
     font-size: 7em;
@@ -122,6 +125,10 @@ section {
   text-align: left;
 }
 @media only screen and (max-width: 34em) {
+  .page__header {
+    /* background-color: white !important;
+    color: black !important; */
+  }
   .navbar__menu {
     display: flex;
     flex-direction: column !important;
