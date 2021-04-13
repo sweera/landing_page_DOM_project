@@ -76,6 +76,8 @@ section {
 .navbar__menu {
   position: fixed;
   top: 0;
+  background-color: black;
+  width: 100%;
 }
 .navbar__menu ul {
   padding-left: 0;
@@ -129,20 +131,20 @@ section {
 }
 @media only screen and (max-width: 34em) {
   .page__header {
-    /* background-color: white !important;
-    color: black !important; */
-    /* opacity: 0.3 !important; */
-    color: black !important;
-    background-color: black !important;
+   
   }
   .navbar__menu {
     display: flex;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    background-color: black !important;
+    width: 100% !important;
+    color: white !important;
+    opacity: 0.8 !important;
   }
   .navbar__menu ul li {
-    width: 100%;
+    width: 100% !important;
     margin: 0px !important;
     text-align: center !important;
   }

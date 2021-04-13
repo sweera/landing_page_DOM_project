@@ -38,6 +38,7 @@ highlightNavItem();
 window.addEventListener("scroll", highlightNavItem);
 
 //To make the menubar disappear once a section is being viewed
+//Menubar disappears when user scrolls down and appears when the user scrolls up
 
 var prev_position = window.pageYOffset;
 window.onscroll = function () {
@@ -51,3 +52,11 @@ window.onscroll = function () {
   }
   prev_position = current_position;
 };
+
+//Smooth scroll to top
+const topScroll = document.getElementById("#top");
+topScroll.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: "smooth",
+});
