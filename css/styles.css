@@ -9,6 +9,7 @@ body {
   margin: 0;
   font-family: "Merriweather", serif;
   color: #fff;
+  /* background-color: black; */
 }
 
 /* Typeography General*/
@@ -16,9 +17,6 @@ h1 {
   font-family: "Fira Sans", sans-serif;
   font-size: 3em;
   margin: 2em 1rem;
-}
-.page__header {
-  background-color: black !important;
 }
 .navbar__menu a {
   color: white;
@@ -30,6 +28,7 @@ h1 {
   justify-content: space-around;
   cursor: pointer;
   line-height: 3em;
+  /* background-color: black; */
 }
 #navbar__list li {
   margin-left: 10px;
@@ -74,7 +73,10 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
-
+.navbar__menu {
+  position: fixed;
+  top: 0;
+}
 .navbar__menu ul {
   padding-left: 0;
   margin: 0;
@@ -105,6 +107,7 @@ section {
   top: 0;
   width: 100%;
   z-index: 5;
+  background-color: black !important;
 }
 
 /* Footer Styles */
@@ -128,6 +131,9 @@ section {
   .page__header {
     /* background-color: white !important;
     color: black !important; */
+    /* opacity: 0.3 !important; */
+    color: black !important;
+    background-color: black !important;
   }
   .navbar__menu {
     display: flex;
@@ -231,7 +237,7 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
-section.your-active-class {
+/* section.your-active-class {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -248,7 +254,7 @@ section.your-active-class .landing__container::before {
 section.your-active-class .landing__container::after {
   opacity: 1;
   animation: rotate 5s linear 0s infinite forwards reverse;
-}
+} */
 
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {

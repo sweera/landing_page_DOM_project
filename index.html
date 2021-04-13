@@ -17,20 +17,20 @@
     <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
     <header class="page__header">
-        <nav class="navbar__menu">
-            <a href="index.html">Logo</a>
+        <nav class="navbar__menu" id="navbar">
+            <!-- <a href="index.html">Logo</a> -->
             <!-- Navigation starts as empty UL that will be populated with JS -->
             <ul id="navbar__list">
-                <li id="item1">Section 1</li>
-                <li id="item2">Section 2</li>
-                <li id="item3">Section 3</li>
-                <li id="item4">Section 4</li>
+                <li id="item1" class="nav_items">Home</li>
+                <li id="item2" class="nav_items">Fiction</li>
+                <li id="item3" class="nav_items">Non-Fiction</li>
+                <li id="item4" class="nav_items">Self-help</li>
             </ul>
         </nav>
     </header>
     <main>
         <header class="main__hero">
-            <h1>Landing Page </h1>
+            <h1>Better with Books</h1>
         </header>
         <!-- Each Section has an ID (used for the anchor) and 
     a data attribute that will populate the li node.
@@ -38,7 +38,7 @@
     The first section is set to active class by default -->
         <section id="section1" data-nav="Section 1" class="your-active-class">
             <div class="landing__container">
-                <h2>Section 1</h2>
+                <h2>Why Read?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus
                     pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
                     lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac
@@ -55,7 +55,7 @@
         </section>
         <section id="section2" data-nav="Section 2">
             <div class="landing__container">
-                <h2>Section 2</h2>
+                <h2>Fiction</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus
                     pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
                     lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac
@@ -72,7 +72,7 @@
         </section>
         <section id="section3" data-nav="Section 3">
             <div class="landing__container">
-                <h2>Section 3</h2>
+                <h2>Non-Fiction</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus
                     pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
                     lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac
@@ -89,7 +89,7 @@
         </section>
         <section id="section4" data-nav="Section 4">
             <div class="landing__container">
-                <h2>Section 4</h2>
+                <h2>Self-Help</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus
                     pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
                     lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac
