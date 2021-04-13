@@ -1,4 +1,4 @@
-# landing_page_udacity
+
 <h1>Landing Page</h1>
 <p>This project is a part of a Nanodegree Program for Front End Development that I am currently pursuing on Udacity.</p>
 
