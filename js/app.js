@@ -1,6 +1,19 @@
 //Manipulating the DOM Assignment
 //Landing Page
 
+//Dynamically creating navigation bar
+
+let items = ["Home", "Fiction", "Non-Fiction", "Self-Help"];
+let menu_bar = document.querySelector("ul");
+for (let i = 0; i < items.length; i++) {
+  let item = items[i];
+  let menu_item = document.createElement("li");
+  menu_item.textContent = item;
+  menu_item.id = `item${i}`;
+  menu_item.className = "nav_items";
+  menu_bar.appendChild(menu_item);
+}
+
 //To scroll to the section corresponding to the item clicked in the menubar
 
 document.addEventListener("DOMContentLoaded", () => {
