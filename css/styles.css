@@ -36,6 +36,10 @@ h1 {
 .selected {
   background-color: royalblue;
 }
+.your-active-class {
+  background-color: steelblue;
+  color: black;
+}
 @media only screen and (min-width: 35em) {
   h1 {
     font-size: 7em;

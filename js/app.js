@@ -40,20 +40,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//Highlight the item in the menubar according to the section that is in view
+//Highlight the item in the menubar and the section according to the section that is in view
 
 const nav_items = document.querySelectorAll(".nav_items");
 const sections = document.querySelectorAll("section");
 
-function highlightNavItem() {
+function highlightItem() {
   let index = sections.length;
   while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
   nav_items.forEach((nav_item) => nav_item.classList.remove("selected"));
   nav_items[index].classList.add("selected");
+  sections.forEach((section) => section.classList.remove("your-active-class"));
+  sections[index].classList.add("your-active-class");
 }
 
-highlightNavItem();
-window.addEventListener("scroll", highlightNavItem); //check for the scroll event and execute the function by adding selected class to classlist
+highlightItem();
+window.addEventListener("scroll", highlightItem); //check for the scroll event and execute the function by adding selected class to classlist
 
 //To make the menubar disappear once a section is being viewed
 //Menubar disappears when user scrolls down and appears when the user scrolls up
