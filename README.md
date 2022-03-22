@@ -1,7 +1,5 @@
 # Landing Page
 
-This project is a part of a Nanodegree Program for Front End Development that I am currently pursuing on Udacity.
-
 ### A brief Summary
 
 The basic HTML/CSS structure of the multi-section website was provided by Udacity. I used that and modified it according to my liking and comfort. 
